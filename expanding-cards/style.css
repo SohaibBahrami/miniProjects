@@ -46,18 +46,25 @@ div {
 h1 {
     color: white;
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in-out;
     margin: 20px;
 }
 
 .default-on h1 {
     opacity: 1;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 .default-on {
     width: 80vw;
+    transition: all 0.7s ease-in-out;
 }
+
+.default-off {
+    width: 6vw;
+    transition: all 0.7s ease-in-out;
+}
+
 
 section {
     display: flex;
