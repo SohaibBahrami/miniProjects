@@ -1,9 +1,14 @@
 body {
     height: 100vh;
     width: 100vw;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Muli', sans-serif;
 }
 
 div:nth-of-type(1) {
@@ -27,26 +32,38 @@ div:nth-of-type(5) {
 }
 
 div {
-    border-radius: 40px;
+    border-radius: 50px;
     align-content: end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 80vh;
+    width: 6vw;
+    cursor: pointer;
 }
 
 h1 {
     color: white;
     opacity: 0;
     transition: all 0.5s;
+    margin: 20px;
+}
+
+.default-on h1 {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
 }
 
 .default-on {
-    opacity: 1;
+    width: 80vw;
 }
 
 section {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    width: 80vw;
+    display: flex;
+    width: 90vw;
     height: 80vh;
     column-gap: 20px;
-    justify-items: center;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
