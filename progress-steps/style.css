@@ -15,12 +15,20 @@ main {
     height: 100%;
 }
 
-#progress,
+#progress {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    align-self: center;
+    justify-content: space-between;
+}
+
 #buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    align-self: center;
 }
 
 button {
@@ -29,27 +37,30 @@ button {
     background-color: #4fa1f8;
     border: 0;
     margin: 10px 6px;
-    width: 6vw;
-    height: 5vh;
+    width: 7.5vw;
+    height: 4.5vh;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
-.deactive {
+.disabled {
     background-color: #cbcbcb;
     cursor: not-allowed;
 }
 
 p {
-    border: 3px grey solid;
+    border: 3px #cbcbcb solid;
     border-radius: 50%;
     padding: 8px;
     width: 10px;
     height: 10px;
     color: grey;
-    justify-content: center;
     align-items: center;
     display: flex;
-    margin: 20px 40px;
+    margin: 50px 0px;
+    transition: all 0.5s;
+    z-index: 1;
+    background-color: white;
 }
 
 .active {
@@ -57,5 +68,16 @@ p {
 }
 
 #progress-bar {
+    align-self: center;
     width: 0%;
+    height: 3px;
+    background-color: #4fa1f8;
+    z-index: -1;
+    position: absolute;
+    transition: all 0.4s ease;
+
+}
+
+button:active {
+    transform: scale(0.95);
 }
