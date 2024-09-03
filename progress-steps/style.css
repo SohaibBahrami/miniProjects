@@ -1,0 +1,61 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#progress,
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+button {
+    border-radius: 8px;
+    color: white;
+    background-color: #4fa1f8;
+    border: 0;
+    margin: 10px 6px;
+    width: 6vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.deactive {
+    background-color: #cbcbcb;
+    cursor: not-allowed;
+}
+
+p {
+    border: 3px grey solid;
+    border-radius: 50%;
+    padding: 8px;
+    width: 10px;
+    height: 10px;
+    color: grey;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px 40px;
+}
+
+.active {
+    border: #4fa1f8 3px solid;
+}
+
+#progress-bar {
+    width: 0%;
+}
