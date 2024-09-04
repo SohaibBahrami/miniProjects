@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://images8.alphacoders.com/133/1336966.jpeg');
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+
+}
+
+#bg-cover {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0, 0, 0, 1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+p {
+    font-size: 4rem;
+    color: white;
+    transition: all 1s;
+}
