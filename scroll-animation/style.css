@@ -39,11 +39,11 @@ main {
     align-items: center;
     justify-content: center;
     transition: all 0.5s;
-    transform: translateX(60vw);
+    transform: translateX(20vw);
 }
 
 .original:nth-of-type(even) {
-    transform: translateX(-60vw);
+    transform: translateX(-20vw);
 }
 
 .slide-in {
