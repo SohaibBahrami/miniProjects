@@ -10,53 +10,57 @@ body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     overflow: hidden;
-}
-
-main {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 300vw;
 }
 
 section {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    top: 0;
+    width: 100vw;
     color: white;
     font-size: 2.5rem;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease-in-out;
 }
 
 #ps {
-    left: 0;
-    background-image: linear-gradient(45deg, rgba(0, 42, 255, 0.5), rgba(64, 0, 255, 0.5));
+    background-image: url('img/ps.jpg');
+    transform: translateX(-50vw);
 }
 
 #xbox {
-    right: 0;
-    background-image: linear-gradient(45deg, rgba(50, 58, 96, 0.5), rgba(82, 47, 97, 0.5));
+    background-image: url("img/xbox.jpg");
+    transform: translateX(50vw);
 }
 
-img {
-    top: 0;
-    position: absolute;
-    z-index: -1;
+#ps-div {
+    background-image: linear-gradient(45deg, rgba(0, 42, 255, 0.5), rgba(64, 0, 255, 0.5));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#xbox-div {
+    background-image: linear-gradient(45deg, rgba(0, 42, 255, 0.5), rgba(64, 0, 255, 0.5));
     height: 100vh;
     width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-#ps-image {
-    transform: translateX(-25vw);
-    left: 0;
-}
-
-#xbox-image {
-    transform: translateX(25vw);
-    right: 0;
+div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 200px;
+    transition: all 1s ease-in-out;
 }
 
 h1 {
@@ -78,9 +82,11 @@ button {
 #ps-button:hover {
     background-color: #3b62b5;
     border: 3px solid #3b62b5;
+    transition: all 0.2s;
 }
 
 #xbox-button:hover {
     background-color: #09880e;
     border: 3px solid #09880e;
+    transition: all 0.2s;
 }
