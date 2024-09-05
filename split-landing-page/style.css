@@ -10,23 +10,24 @@ body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     overflow: hidden;
-    width: 300vw;
 }
 
 section {
     top: 0;
     width: 100vw;
+    height: 100vh;
     color: white;
     font-size: 2.5rem;
     position: absolute;
     background-repeat: no-repeat;
-    background-size: cover;
     transition: all 1s ease-in-out;
 }
 
 #ps {
     background-image: url('img/ps.jpg');
     transform: translateX(-50vw);
+    background-position: top right;
+    background-size: 75%;
 }
 
 #xbox {
