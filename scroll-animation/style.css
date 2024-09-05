@@ -9,6 +9,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 header {
@@ -24,10 +25,10 @@ main {
 }
 
 
-div {
+.original {
     background-color: rgb(25, 117, 203);
     font-size: 2.5rem;
-    margin: 10px;
+    margin: 20px;
     font-weight: bold;
     color: white;
     border-radius: 10px;
@@ -37,4 +38,12 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s;
 }
+
+.slide-left {
+    transform: translateX(-50px);
+}
+.slide-right{
+    transform: translateX(50px);
+} 
