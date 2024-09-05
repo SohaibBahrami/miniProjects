@@ -27,23 +27,25 @@ main {
 
 .original {
     background-color: rgb(25, 117, 203);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 20px;
     font-weight: bold;
     color: white;
     border-radius: 10px;
     box-shadow: 2px 2px 10px black;
-    width: 25vw;
-    height: 12vw;
+    width: 20vw;
+    height: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.5s;
+    transform: translateX(60vw);
 }
 
-.slide-left {
-    transform: translateX(-50px);
+.original:nth-of-type(even) {
+    transform: translateX(-60vw);
 }
-.slide-right{
-    transform: translateX(50px);
-} 
+
+.slide-in {
+    transform: translateX(0);
+}
