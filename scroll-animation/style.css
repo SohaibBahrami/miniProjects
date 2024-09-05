@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    margin: 15px auto;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+div {
+    background-color: rgb(25, 117, 203);
+    font-size: 2.5rem;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+    width: 25vw;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
