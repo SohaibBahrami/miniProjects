@@ -10,7 +10,6 @@ body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     overflow: hidden;
-    transition: transform 0s ease-in-out;
 }
 
 section {
@@ -27,7 +26,7 @@ section {
 #ps {
     background-image: url('img/ps.jpg');
     background-position: top right;
-    background-size: 75%;
+    background-size: 1100px;
     left: -50vw;
 }
 
@@ -92,4 +91,16 @@ button {
     background-color: #09880e;
     border: 3px solid #09880e;
     transition: all 0.2s;
+}
+
+@media (max-width: 1024) {
+    section {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    section div {
+        width: 50vw;
+        height: 50vh;
+    }
 }
