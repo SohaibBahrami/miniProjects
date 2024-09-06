@@ -36,7 +36,8 @@ section {
 }
 
 #ps-div {
-    background-image: linear-gradient(45deg, rgba(0, 42, 255, 0.5), rgba(64, 0, 255, 0.5));
+    background-image: linear-gradient(90deg, rgba(36, 117, 239, 0.3), rgba(26, 97, 197, 0.3));
+    background-color: rgba(51, 51, 51, 0.5);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -46,7 +47,8 @@ section {
 }
 
 #xbox-div {
-    background-image: linear-gradient(45deg, rgba(0, 42, 255, 0.5), rgba(64, 0, 255, 0.5));
+    background-image: linear-gradient(-90deg, rgba(40, 31, 49, 0.3), rgba(22, 3, 79, 0.3));
+    background-color: rgba(51, 51, 51, 0.7);
     height: 100vh;
     width: 100vw;
     display: flex;
