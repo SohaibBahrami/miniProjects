@@ -30,7 +30,11 @@ function moveUpPassword() {
   setTimeout(moveUpPassword, 50);
 }
 function resetAnimation() {
-  emailLetters.forEach((letter) => letter.classList.remove("moved"));
-  passwordLetters.forEach((letter) => letter.classList.remove("moved"));
+  if (inputs[0].value == "") {
+    emailLetters.forEach((letter) => letter.classList.remove("moved"));
+  }
+  if (inputs[1].value == "") {
+    passwordLetters.forEach((letter) => letter.classList.remove("moved"));
+  }
   currentIndex = 0;
 }
