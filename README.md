@@ -1,5 +1,5 @@
 Mini Projects for HTML, CSS and JavaScript.
-Taken from bradtraversy's 50projects50days.
+The ideas are taken from bradtraversy's 50projects50days; but the codes are mine.
 
 
 https://github.com/bradtraversy/50projects50days
