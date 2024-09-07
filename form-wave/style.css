@@ -30,15 +30,13 @@ main {
 
 h1 {
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
 }
 
 label {
     font-size: 1.2rem;
     position: relative;
     cursor: text;
-    /* transform: translateY(30%); */
-    transition: all 0.5s ease-in-out;
 }
 
 span {
@@ -80,5 +78,10 @@ button {
 }
 
 a {
+    color: lightblue;
+}
+
+.moved {
+    transform: translateY(225%);
     color: lightblue;
 }
