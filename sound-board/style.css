@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(161, 100, 223);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+button {
+    background-color: rebeccapurple;
+    font-size: 1.3rem;
+    width: 150px;
+    height: 75px;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+}
