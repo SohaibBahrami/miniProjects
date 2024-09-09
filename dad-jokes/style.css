@@ -21,7 +21,6 @@ main {
     border-radius: 10px;
     text-align: center;
     width: 800px;
-    height: 50vh;
     max-width: 100%;
     align-items: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -39,7 +38,7 @@ p {
     font-size: 1.8rem;
     letter-spacing: 1px;
     line-height: 40px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 button {
@@ -53,5 +52,5 @@ button {
     border-radius: 10px;
     cursor: pointer;
     outline: 0;
-    margin: 40px 0;
+    margin-bottom: 50px;
 }
