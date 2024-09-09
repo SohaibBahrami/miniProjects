@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+    background-color: #383838;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+#instructions {
+    padding: 20px 30px;
+    border: 1px white solid;
+    border-radius: 5px;
+    background-color: #222;
+    font-size: 1.3rem;
+    display: none;
+}
+
+.key {
+    margin: 0 70px;
+    position: relative;
+    flex-direction: column;
+    display: inline-flex;
+    align-items: center;
+    border: 1px white solid;
+    padding: 20px 30px;
+    background-color: #222;
+    border-radius: 5px;
+    /* display: none; */
+}
+
+small {
+    position: absolute;
+    top: -24px;
+    text-align: center;
+}
