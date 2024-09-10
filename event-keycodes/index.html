@@ -13,9 +13,14 @@
   <body>
     <main id="container">
       <p id="instructions">Press any key to get the keyCode</p>
-      <div class="key"><small>event.key</small></div>
-      <div class="key"><small>event.keyCode</small></div>
-      <div class="key"><small>event.code</small></div>
+      <section class="hidden">
+        <div>
+          <span class="key"></span>
+          <small>event.key</small>
+        </div>
+        <div><span class="keyCode"></span><small>event.keyCode</small></div>
+        <div><span class="code"></span><small>event.code</small></div>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>

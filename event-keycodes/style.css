@@ -29,24 +29,35 @@ body {
     border-radius: 5px;
     background-color: #222;
     font-size: 1.3rem;
-    display: none;
 }
 
-.key {
-    margin: 0 70px;
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+div {
+    margin: 0 60px;
     position: relative;
     flex-direction: column;
     display: inline-flex;
     align-items: center;
     border: 1px white solid;
     padding: 20px 30px;
+    width: 100%;
     background-color: #222;
     border-radius: 5px;
-    /* display: none; */
 }
 
 small {
     position: absolute;
     top: -24px;
     text-align: center;
+}
+
+.hidden {
+    display: none;
 }
