@@ -34,7 +34,9 @@ textarea {
 }
 
 #choice-container {
-    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
 }
 
 .choices {
@@ -45,4 +47,5 @@ textarea {
     padding: 10px 20px;
     border-radius: 50px;
     margin-right: 5px;
+    margin-bottom: 10px;
 }
