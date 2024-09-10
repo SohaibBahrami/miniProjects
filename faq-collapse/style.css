@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+main {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+details {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 30px 50px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+details[open] {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+details[open]::before {
+    background: url("icons/forum.svg");
+    opacity: 0.2;
+    background-size: cover;
+    content: '';
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+summary {
+    list-style: none;
+}
+
+summary::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url('icons/arrow_drop_down.svg');
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+details[open]>summary::after {
+    background: url('icons/close.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #888;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+
+p {
+    font-weight: normal;
+    font-size: 1rem;
+    margin-top: 15px;
+}
