@@ -5,7 +5,7 @@ let count = -1;
 separate();
 const choiceObject = document.getElementsByClassName("choices-style");
 
-choiceInput.addEventListener("keydown", (event) => {
+choiceInput.addEventListener("keyup", (event) => {
   if (event.key === ",") {
     separate();
   } else {
